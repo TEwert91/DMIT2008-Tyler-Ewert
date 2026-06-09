@@ -7,7 +7,7 @@ class ExpenseSearch extends HTMLElement {
     connectedCallback () {
         // this fires when element initially loads into the DOM
         this.render();
-        this.querySelector('#searchbox').addEventListener('input', handleSearch)
+        this.querySelector('#searchbox').addEventListener('input', this.handleSearch);
     }
 
     handleSearch() {
